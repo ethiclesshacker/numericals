@@ -1,5 +1,9 @@
 console.log("Hey Connection!");
 
+function doSomething(event) {
+    console.log(event);
+    alert(`You pressed: ${event.textContent}`);
+}
 
 function bisection(eqn, a, b, dp) {
     mid = (a + b) / 2;
@@ -11,8 +15,3 @@ function bisection(eqn, a, b, dp) {
 }
 
 bisection("(x**3)-(3*x)+1.06", 0, 1);
-
-function doSomething(event) {
-    console.log(event);
-    alert(`You pressed: ${event.textContent}`);
-}
