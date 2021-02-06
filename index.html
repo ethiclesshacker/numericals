@@ -12,7 +12,69 @@
 
 <body>
     <h1>Knock Yourself Out</h1>
-    <ul class="items">
+    <form class="data-form">
+        <label for="expression">Equation: </label>
+        <input type="text" name="expression">
+        <br>
+        <label for="a">a: </label>
+        <input type="text" name="a">
+        <br>
+        <label for="b">b: </label>
+        <input type="text" name="b">
+    </form>
+    <div class="instructions">
+        <h2> How to write the equation: </h2>
+        <ol>
+            <li>Wrap each element in parantheses for best results.</li>
+            <li>Use "**" for power. For example, x<sup>3</sup> to be written as <strong>(x**3)</strong>.</li>
+            <li>Full example: <br>
+                Written equation: <code> x<sup>3</sup> - 3x + 1.06 </code> <br>
+                Converted format: <code> (x**3) - (3*x) + 1.06 </code>
+            </li>
+        </ol>
+    </div>
+    <div class="items">
+        <h3>Non-Linear Equations</h3>
+        <button onclick="doSomething(this);" class="item">Bisection</button>
+        <button onclick="doSomething(this);" class="item">Regula-falsi</button>
+        <button onclick="doSomething(this);" class="item">Secant </button>
+        <button onclick="doSomething(this);" class="item">Newton-Raphson</button>
+    </div>
+    <div class="items">
+        <h3>Interpolation</h3>
+        <button onclick="doSomething(this);" class="item">Newton Forward </button>
+        <button onclick="doSomething(this);" class="item">Newton Backward interpolation</button>
+        <button onclick="doSomething(this);" class="item">Lagrange interpolation</button>
+        <button onclick="doSomething(this);" class="item">Gaussian Elimination</button>
+        <button onclick="doSomething(this);" class="item">Gauss–Jordan</button>
+        <button onclick="doSomething(this);" class="item">Gauss–Jordan Matrix Inversion</button>
+        <button onclick="doSomething(this);" class="item">Iteration methods convergence conditions</button>
+        <button onclick="doSomething(this);" class="item">Gauss-Seidel</button>
+        <button onclick="doSomething(this);" class="item">Gauss-Jacobi Iterative Methods</button>
+    </div>
+    <div class="items">
+        <h3>Differential Equations</h3>
+        <button onclick="doSomething(this);" class="item">Euler</button>
+        <button onclick="doSomething(this);" class="item">Runge-Kutta second order methods</button>
+        <button onclick="doSomething(this);" class="item">Range-Kutta fourth order methods</button>
+    </div>
+    <div class="items">
+        <h3>Numerical Integration</h3>
+        <button onclick="doSomething(this);" class="item">Trapezoidal </button>
+        <button onclick="doSomething(this);" class="item">Simpson’s 1/3<sup> rd</sup></button>
+    </div>
+    <div class="items">
+        <h3>Interpolation</h3>
+        <button onclick="doSomething(this);" class="item">Least square approximation</button>
+        <button onclick="doSomething(this);" class="item">Linear regression</button>
+        <button onclick="doSomething(this);" class="item">Polynomial regression</button>
+        <button onclick="doSomething(this);" class="item">Fitting Exponential functions</button>
+        <button onclick="doSomething(this);" class="item">Fitting Trigonometric functions</button>
+    </div>
+
+    <!-- Sample -->
+
+    <!-- <ul class="items">
         <h3>Non-Linear Equations</h3>
         <li class="item">Bisection</li>
         <li class="item">Regula-falsi</li>
@@ -49,101 +111,7 @@
         <li class="item">Polynomial regression</li>
         <li class="item">Fitting Exponential functions</li>
         <li class="item">Fitting Trigonometric functions</li>
-    </ul>
-
-    <!-- <form class="items" target="#">
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Newton Forward </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Newton Backward interpolation </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Lagrange interpolation </label>
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> </label>
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Gaussian Elimination </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Gauss–Jordan </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Gauss–Jordan Matrix Inversion </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Iteration methods convergence conditions </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Gauss-Seidel </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Gauss-Jacobi Iterative Methods </label>
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> </label>
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Bisection </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Regula-falsi </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Secant </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Newton-Raphson </label>
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> </label>
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Euler </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Runge-Kutta second order methods </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Range-Kutta fourth order methods </label>
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> </label>
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Trapezoidal </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Simpson’s 1/3<sup> rd</sup> </label>
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> </label>
-
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Least square approximation </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Linear regression </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Polynomial regression </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Fitting Exponential functions </label>
-        <input type="radio" name="choice" class="radio-btn" id="" value="">
-        <label> Fitting Trigonometric functi </label>
-    </form> -->
-
-    
-    <div class="instructions">
-        <h2> How to write the equation: </h2>
-        <ol>
-            <li>Wrap each element in parantheses for best results.</li>
-            <li>Use "**" for power. For example, x<sup>3</sup> to be written as <strong>(x**3)</strong>.</li>
-            <li>Full example: <br>
-                Written equation: <code> x<sup>3</sup> - 3x + 1.06 </code> <br>
-                Converted format: <code> (x**3) - (3*x) + 1.06 </code>
-            </li>
-        </ol>
-    </div>
-
-    <form class="data-form">
-        <label for="expression">Equation: </label>
-        <input type="text" name="expression">
-        <br>
-        <label for="a">a: </label>
-        <input type="text" name="a">
-        <br>
-        <label for="b">b: </label>
-        <input type="text" name="b">
-    </form>
+    </ul> -->
 
 </body>
 

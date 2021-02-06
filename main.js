@@ -11,3 +11,8 @@ function bisection(eqn, a, b, dp) {
 }
 
 bisection("(x**3)-(3*x)+1.06", 0, 1);
+
+function doSomething(event) {
+    console.log(event);
+    alert(`You pressed: ${event.textContent}`);
+}
