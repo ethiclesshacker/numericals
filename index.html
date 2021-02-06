@@ -6,43 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>c
+    <script src="main.js"></script>
     <title>CC6 Numericals</title>
 </head>
 
 <body>
     <h1>Knock Yourself Out</h1>
     <ul class="items">
+        <h3>Non-Linear Equations</h3>
+        <li class="item">Bisection</li>
+        <li class="item">Regula-falsi</li>
+        <li class="item">Secant </li>
+        <li class="item">Newton-Raphson</li>
+    </ul>
+    <ul class="items">
+        <h3>Interpolation</h3>
         <li class="item">Newton Forward </li>
         <li class="item">Newton Backward interpolation</li>
         <li class="item">Lagrange interpolation</li>
-        <li class="item"></li>
         <li class="item">Gaussian Elimination</li>
         <li class="item">Gauss–Jordan</li>
         <li class="item">Gauss–Jordan Matrix Inversion</li>
         <li class="item">Iteration methods convergence conditions</li>
         <li class="item">Gauss-Seidel</li>
         <li class="item">Gauss-Jacobi Iterative Methods</li>
-        <li class="item"></li>
-        <li class="item">Bisection</li>
-        <li class="item">Regula-falsi</li>
-        <li class="item">Secant </li>
-        <li class="item">Newton-Raphson</li>
-        <li class="item"></li>
+    </ul>
+    <ul class="items">
+        <h3>Differential Equations</h3>
         <li class="item">Euler</li>
         <li class="item">Runge-Kutta second order methods</li>
         <li class="item">Range-Kutta fourth order methods</li>
-        <li class="item"></li>
+    </ul>
+    <ul class="items">
+        <h3>Numerical Integration</h3>
         <li class="item">Trapezoidal </li>
         <li class="item">Simpson’s 1/3<sup> rd</sup></li>
-        <li class="item"></li>
+    </ul>
+    <ul class="items">
+        <h3>Interpolation</h3>
         <li class="item">Least square approximation</li>
         <li class="item">Linear regression</li>
         <li class="item">Polynomial regression</li>
         <li class="item">Fitting Exponential functions</li>
         <li class="item">Fitting Trigonometric functions</li>
     </ul>
-    <form class="items" target="#">
+
+    <!-- <form class="items" target="#">
 
         <input type="radio" name="choice" class="radio-btn" id="" value="">
         <label> Newton Forward </label>
@@ -110,11 +119,32 @@
         <label> Fitting Exponential functions </label>
         <input type="radio" name="choice" class="radio-btn" id="" value="">
         <label> Fitting Trigonometric functi </label>
+    </form> -->
+
+    
+    <div class="instructions">
+        <h2> How to write the equation: </h2>
+        <ol>
+            <li>Wrap each element in parantheses for best results.</li>
+            <li>Use "**" for power. For example, x<sup>3</sup> to be written as <strong>(x**3)</strong>.</li>
+            <li>Full example: <br>
+                Written equation: <code> x<sup>3</sup> - 3x + 1.06 </code> <br>
+                Converted format: <code> (x**3) - (3*x) + 1.06 </code>
+            </li>
+        </ol>
+    </div>
+
+    <form class="data-form">
+        <label for="expression">Equation: </label>
+        <input type="text" name="expression">
+        <br>
+        <label for="a">a: </label>
+        <input type="text" name="a">
+        <br>
+        <label for="b">b: </label>
+        <input type="text" name="b">
     </form>
 
-    <form action="#">
-        <input type="number" id="" value="">
-    </form>
 </body>
 
 </html>
